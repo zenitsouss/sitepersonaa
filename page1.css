@@ -9,7 +9,7 @@
   body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
+    background-color: #444444;
     color: #333;
   }
   
@@ -156,8 +156,11 @@
   }
   
   /* Compétences */
+  #comp { 
+    color : whitesmoke;
+  }
   #skills {
-    background-color: #fff;
+    background-color: whitesmoke;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -187,8 +190,11 @@
   }
   
   /* Expérience professionnelle */
+  #exp { 
+    color : whitesmoke;
+  }
   #experience {
-    background-color: #fff;
+    background-color: whitesmoke;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -224,8 +230,11 @@
   }
   
   /* Formation */
+  #educ { 
+    color : whitesmoke;
+  }
   #education{ 
-    background-color: #fff;
+    background-color: whitesmoke;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
