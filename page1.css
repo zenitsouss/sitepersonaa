@@ -1,0 +1,20 @@
+/* Titre avec la barre en arrière-plan */
+#titre {
+    text-align: center;          /* Centre le texte */
+    color: black;                /* Couleur du texte */
+    position: relative;          /* Nécessaire pour positionner la barre derrière le titre */
+    padding-bottom: 10px;
+    font-family: IOCR A Std, monospace;        /* Ajoute un peu d'espace sous le texte du titre */
+}
+
+/* Barre derrière le titre */
+#titre::after {
+    content: "";                 /* Nécessaire pour créer un pseudo-élément */
+    position: absolute;          /* Positionne la barre en arrière-plan */
+    bottom: 0;                   /* Place la barre juste sous le texte */
+    left: 0;                     /* Aligne la barre à gauche */
+    width: 100%;                 /* La barre occupe toute la largeur du titre */
+    height: 65px;                 /* Hauteur de la barre */
+    background-color: aqua;      /* Couleur de la barre */
+    z-index: -1;                 /* S'assure que la barre soit derrière le titre */
+}
