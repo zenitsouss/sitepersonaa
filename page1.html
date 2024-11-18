@@ -8,6 +8,14 @@
   </head>
   <body>
     <!-- Header avec barre de navigation -->
+    <div class="menu-deroulant">
+      <button class="menu-btn">Menu</button>
+      <div class="menu-content">
+        <a href="proj1.html">Projet n*1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+      </div>
+    </div>
     <header>
       <div class="container">
         <h1 id="titre">Elon Mask</h1>
@@ -16,18 +24,19 @@
         <!-- Menu de navigation -->
         <nav>
           <ul class="menu">
-            <li><a href=".skills">Compétences</a></li>
-            <li><a href=".experience">Expérience</a></li>
-            <li><a href=".education">Education</a></li>
+            <li><a href="#comp"><b>Compétences</b></a></li>
+            <li><a href="#exp"><b>Expérience</b></a></li>
+            <li><a href="#educ"><b>Education</b></a></li>
           </ul>
           </nav>
+
       </div>
     </header>
-
+    
     <section id="cv">
       <div class="container">
-        <h2>Compétences</h2>
-        <div class="skills">
+        <h2 id="comp">Compétences</h2>
+        <div id="skills">
           <h3>Langages de programmation :</h3>
           <ul>
             <li>HTML5, CSS3, JavaScript</li>
@@ -53,8 +62,8 @@
           </ul>
         </div>
 
-        <h2>Expérience professionnelle</h2>
-        <div class="experience">
+        <h2 id="exp">Expérience professionnelle</h2>
+        <div id="experience">
           <h3>Développeur Full Stack - Société Google</h3>
           <p>Jan 2020 - Présent</p>
           <ul>
@@ -71,8 +80,8 @@
           </ul>
         </div>
 
-        <h2>Formation</h2>
-        <div class="education">
+        <h2 id="educ">Formation</h2>
+        <div id="education">
           <h3>Bachelor en Informatique - Université de Paris</h3>
           <p>2014 - 2017</p>
         </div>

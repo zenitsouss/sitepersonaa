@@ -28,6 +28,53 @@
     text-align: center;
     border-bottom: 4px solid darkgray;
   }
+  /* Menu déroulant */
+  .menu-deroulant {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 1rem;
+  }
+  
+  .menu-btn {
+    background-color: #2b2b2b;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  .menu-btn:hover {
+    background-color: #080808;
+  }
+  
+  .menu-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+  }
+  
+  .menu-content a {
+    color: #333;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu-content a:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .menu-deroulant:hover .menu-content {
+    display: block;
+  }
   
   #titre {
     font-size: 5rem;
@@ -109,7 +156,7 @@
   }
   
   /* Compétences */
-  .skills {
+  #skills {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
@@ -117,30 +164,30 @@
     margin-bottom: 30px;
   }
   
-  .skills h3 {
+  #skills h3 {
     margin-bottom: 10px;
     font-size: 1.2rem;
     color: #444444;
   }
   
-  .skills ul {
+  #skills ul {
     list-style: none;
   }
   
-  .skills ul li {
+  #skills ul li {
     margin-left: 20px;
     font-size: 1rem;
     color: #555;
   }
   
-  .skills ul li::before {
+  #skills ul li::before {
     content: "•";
     color: #444444;
     margin-right: 10px;
   }
   
   /* Expérience professionnelle */
-  .experience {
+  #experience {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
@@ -148,36 +195,36 @@
     margin-bottom: 30px;
   }
   
-  .experience h3 {
+  #experience h3 {
     font-size: 1.3rem;
     font-weight: bold;
     color: #444444;
   }
   
-  .experience p {
+  #experience p {
     font-size: 1rem;
     color: #888;
     margin-bottom: 10px;
   }
   
-  .experience ul {
+  #experience ul {
     list-style: none;
   }
   
-  .experience ul li {
+  #experience ul li {
     margin-left: 20px;
     font-size: 1rem;
     color: #555;
   }
   
-  .experience ul li::before {
+  #experience ul li::before {
     content: "•";
     color: #444444;
     margin-right: 10px;
   }
   
   /* Formation */
-  .education{ 
+  #education{ 
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
@@ -185,13 +232,13 @@
     margin-bottom: 30px;
   }
   
-  .education h3 {
+  #education h3 {
     font-size: 1.3rem;
     font-weight: bold;
     color: #444444;
   }
   
-  .education p {
+  #education p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 10px;
@@ -211,15 +258,15 @@
         font-size: 1rem;
     }
 
-    .skills h3,
-    .experience h3,
-    .education h3 {
+    #skills h3,
+    #experience h3,
+    #education h3 {
         font-size: 1.2rem;
     }
 
-    .skills ul li,
-    .experience ul li,
-    .education ul li {
+    #skills ul li,
+    #experience ul li,
+    #education ul li {
         font-size: 0.9rem;
     }
 
@@ -252,21 +299,21 @@
         padding: 6px 12px;
     }
 
-    .skills,
-    .experience,
-    .education {
+    #skills,
+    #experience,
+    #education {
         padding: 10px;
     }
 
-    .skills h3,
-    .experience h3,
-    .education h3 {
+    #skills h3,
+    #experience h3,
+    #education h3 {
         font-size: 1.1rem;
     }
 
-    .skills ul li,
-    .experience ul li,
-    .education ul li {
+    #skills ul li,
+    #experience ul li,
+    education ul li {
         font-size: 0.85rem;
     }
 }
